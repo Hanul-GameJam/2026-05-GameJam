@@ -103,45 +103,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BB1_0
+      name: Bieber_Boss_Walking_1_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 0
-        width: 1502
-        height: 1024
+        x: 46
+        y: 322
+        width: 416
+        height: 398
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b4675dc3f1d3f9ea0800000000000000
-      internalID: -5863900985439193525
+      spriteID: 1f66bae2a3e3a4245abd59dd8006737c
+      internalID: -112458002
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BB1_1
+      name: Bieber_Boss_Walking_1_1
       rect:
         serializedVersion: 2
-        x: 82
-        y: 303
-        width: 7
-        height: 8
+        x: 83
+        y: 304
+        width: 5
+        height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c236925e87f5f4460800000000000000
-      internalID: 7228100899798344492
+      spriteID: 69a41b594bf895b43aed7befd11ab45a
+      internalID: -676481776
       vertices: []
       indices: 
       edges: []
@@ -150,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 4011f7e6b0bb9f646bf66ee2df81f351
     internalID: 0
     vertices: []
     indices: 
@@ -158,10 +158,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      BB1_0: -5863900985439193525
-      BB1_1: 7228100899798344492
+      Bieber_Boss_Walking_1_0: -112458002
+      Bieber_Boss_Walking_1_1: -676481776
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
