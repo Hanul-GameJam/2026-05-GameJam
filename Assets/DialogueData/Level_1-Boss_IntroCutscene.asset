@@ -13,6 +13,19 @@ MonoBehaviour:
   m_Name: Level_1-Boss_IntroCutscene
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
-  - portrait: {fileID: 0}
-    characterName: 
-    dialogue: 
+  - portrait: {fileID: -896319470, guid: 87e1789e24d60694e9228bf39aaf9a66, type: 3}
+    characterName: ???
+    dialogue: "\"\uBA48\uCD94\uC2ED\uC1FC!\""
+  - portrait: {fileID: -896319470, guid: 87e1789e24d60694e9228bf39aaf9a66, type: 3}
+    characterName: ???
+    dialogue: "\"\uADF8 \uC774\uC0C1 \uC6B0\uB9AC \"\uD574\uB2EC\uBCC4\" \uC870\uC9C1\uC6D0\uB4E4\uC744
+      \uAC74\uB4DC\uB838\uB2E4\uAC00\uB294...\""
+  - portrait: {fileID: -896319470, guid: 87e1789e24d60694e9228bf39aaf9a66, type: 3}
+    characterName: "\uD2B8\uB808\uBAB0\uB85C"
+    dialogue: "\"\uC800, \"\uD2B8\uB808\uBAB0\uB85C\"! \uC0C1\uB300\uAC00 \uC544\uBB34\uB9AC
+      \uB2F9\uC2E0\uC774\uB77C\uACE0 \uD574\uB3C4 \uAC00\uB9CC\uD788 \uC788\uC9C0\uB294
+      \uC54A\uC744 \uAC81\uB2C8\uB2E4!\""
+  - portrait: {fileID: 665538603, guid: af9e5c4b2b97ff54c81361d029e7211e, type: 3}
+    characterName: "\uB2F9\uC2E0"
+    dialogue: "\"\uC88B\uB2E4! \uC5BC\uB9C8\uB098 \uC131\uC7A5\uD588\uB294 \uC9C0
+      \uB098\uC5D0\uAC8C \uBCF4\uC5EC\uBD10\uB77C!\""

@@ -364,10 +364,10 @@ PrefabInstance:
     - target: {fileID: 8245060772936669297, guid: e8c04c12483e32d42a69a840aee9a362, type: 3}
       propertyPath: dialogueData
       value: 
-      objectReference: {fileID: 11400000, guid: 77c4e40efbf198945ae97994a349d0de, type: 2}
+      objectReference: {fileID: 11400000, guid: 0635e1507ce965f448d6794fe949b60b, type: 2}
     - target: {fileID: 8245060772936669297, guid: e8c04c12483e32d42a69a840aee9a362, type: 3}
       propertyPath: nextSceneName
-      value: Level_1-Boss
+      value: IntroScene_2
       objectReference: {fileID: 0}
     - target: {fileID: 8386059985260917933, guid: e8c04c12483e32d42a69a840aee9a362, type: 3}
       propertyPath: m_Name
