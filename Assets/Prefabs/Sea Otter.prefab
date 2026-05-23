@@ -185,7 +185,7 @@ MonoBehaviour:
   turnWaitTime: 10
   isEnemyFacingLeft: 1
   sfxSource: {fileID: 0}
-  deathSound: {fileID: 0}
+  deathSound: {fileID: 8300000, guid: 8d91cdcb6face0b499ab7aed365509cc, type: 3}
   isWalking: 0
   animator: {fileID: 6418144892518400647}
   damageCooldown: 1
