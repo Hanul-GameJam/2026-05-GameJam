@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 87e6db3062906804eb063adcf5a0e514
+guid: 001c00f0de030574b8fffeab9f26f440
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 969916604799199700
-    second: Obj2_0
+      213: 8795094196798387960
+    second: BBC_0
+  - first:
+      213: 850007188296686201
+    second: BBC_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Obj2_0
+      name: Bieber_Boss_Charge_0
       rect:
         serializedVersion: 2
-        x: 23
-        y: 80
-        width: 221
-        height: 338
+        x: 120
+        y: 282
+        width: 554
+        height: 345
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +118,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4d92fc26306d57d00800000000000000
-      internalID: 969916604799199700
+      spriteID: 8f67446d2937e0a70800000000000000
+      internalID: 8795094196798387960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bieber_Boss_Charge_1
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 282
+        width: 763
+        height: 345
+      alignment: 9
+      pivot: {x: 0.53, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97ad3f2c805dbcb00800000000000000
+      internalID: 850007188296686201
       vertices: []
       indices: 
       edges: []
@@ -125,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 2ee60edfc10411f4b91919c78ca00e61
+    spriteID: c8614025177fe414ca7f40d50c87343c
     internalID: 0
     vertices: []
     indices: 
@@ -133,9 +158,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Obj2_0: 969916604799199700
+      Bieber_Boss_Charge_0: 8795094196798387960
+      Bieber_Boss_Charge_1: 850007188296686201
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
