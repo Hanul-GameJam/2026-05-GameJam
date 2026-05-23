@@ -181,7 +181,7 @@ Transform:
   m_GameObject: {fileID: 9011920414234116086}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.84456, y: -0.18115, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -336,3 +336,8 @@ MonoBehaviour:
   turnInterval: 3
   turnWaitTime: 2
   isEnemyFacingLeft: 1
+  sfxSource: {fileID: 0}
+  deathSound: {fileID: 0}
+  isWalking: 0
+  animator: {fileID: 0}
+  damageCooldown: 1
