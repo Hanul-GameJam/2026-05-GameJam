@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 1278528716028782238}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.22573614, y: -7.99, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
   m_LocalScale: {x: 1.1656, y: 1.1656, z: 1.1656}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -185,9 +185,10 @@ MonoBehaviour:
   turnWaitTime: 10
   isEnemyFacingLeft: 1
   sfxSource: {fileID: 0}
-  deathSound: {fileID: 0}
+  deathSound: {fileID: 8300000, guid: 8d91cdcb6face0b499ab7aed365509cc, type: 3}
   isWalking: 0
   animator: {fileID: 6418144892518400647}
+  damageCooldown: 1
 --- !u!95 &6418144892518400647
 Animator:
   serializedVersion: 7
