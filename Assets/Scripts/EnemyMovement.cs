@@ -12,6 +12,7 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] public float EnemySpeed = 5f;
     // [SerializeField] public GameObject.Transform.Position EnemyPosition;
     [SerializeField] public float turnInterval = 3f;  // 3 sec
+    [SerializeField] public float turnWaitTime = 2.0f;
     private float timer = 0f;
     [SerializeField] public bool isEnemyFacingLeft = true;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -28,8 +29,9 @@ public class EnemyMovement : MonoBehaviour
         timer += Time.deltaTime;
         if (timer >= turnInterval)
         {
+            Invoke("Wait", turnWaitTime);
             timer = 0.0f;
-            Wait();
+            
             isEnemyFacingLeft = !isEnemyFacingLeft;
         }
 
@@ -63,9 +65,8 @@ public class EnemyMovement : MonoBehaviour
         
     }
 
-    IEnumerator Wait()
+    private void Wait()
     {
-        yield return new WaitForSeconds(10.0f);
-        Debug.Log("waited");
+        Debug.Log("waiting");
     }
 }
