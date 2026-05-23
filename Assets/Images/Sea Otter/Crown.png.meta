@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: c884d4ada6e79df43bfce7becd589a9d
+guid: ffd533075459fc34eb23a5a18bcbdb14
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3274595782342905008
-    second: Obj1_0
-  - first:
-      213: 4962079248193941423
-    second: Obj1_1
+      213: -8222406987496834216
+    second: crown_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,45 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Obj1_0
+      name: Crown_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 0
-        width: 686
-        height: 1024
+        x: 45
+        y: 56
+        width: 137
+        height: 106
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 053757a4c7c4e82d0800000000000000
-      internalID: -3274595782342905008
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Obj1_1
-      rect:
-        serializedVersion: 2
-        x: 700
-        y: 0
-        width: 749
-        height: 1024
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fafefe739c8dcd440800000000000000
-      internalID: 4962079248193941423
+      spriteID: c632ce6db1686004db816a527b8ebc32
+      internalID: -1436969735
       vertices: []
       indices: 
       edges: []
@@ -150,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 257fde99fdcc11d4786375bbb73e8ed1
     internalID: 0
     vertices: []
     indices: 
@@ -158,10 +133,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Obj1_0: -3274595782342905008
-      Obj1_1: 4962079248193941423
+      Crown_0: -1436969735
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
