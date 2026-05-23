@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BBA1_0
+      name: Bieber_Boss_Attack_1_0
       rect:
         serializedVersion: 2
-        x: 20
-        y: 1
-        width: 1197
-        height: 1023
+        x: 144
+        y: 269
+        width: 552
+        height: 586
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e02862aa5b5d6d3e0800000000000000
-      internalID: -2029199605863382514
+      spriteID: dda1ceb14c871b84b8d9003575d2364a
+      internalID: 1035269757
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 608c94de21200b3439a97d3b345fb160
     internalID: 0
     vertices: []
     indices: 
@@ -133,9 +133,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      BBA1_0: -2029199605863382514
+      Bieber_Boss_Attack_1_0: 1035269757
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

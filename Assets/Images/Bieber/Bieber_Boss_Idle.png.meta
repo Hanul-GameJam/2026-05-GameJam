@@ -115,133 +115,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BB2_0
+      name: Bieber_Boss_Idle_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 0
-        width: 1430
-        height: 1024
+        x: 502
+        y: 328
+        width: 468
+        height: 392
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 50c49c3768db309b0800000000000000
-      internalID: -5115036366596912123
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BB2_1
-      rect:
-        serializedVersion: 2
-        x: 995
-        y: 658
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fd304b8da58de8f60800000000000000
-      internalID: 8038600269597246431
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BB2_2
-      rect:
-        serializedVersion: 2
-        x: 995
-        y: 547
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5b1b4a2babad89870800000000000000
-      internalID: 8689935976407282101
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BB2_3
-      rect:
-        serializedVersion: 2
-        x: 994
-        y: 496
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 19eb4e2a7c0c0abd0800000000000000
-      internalID: -2620883019465703791
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BB2_4
-      rect:
-        serializedVersion: 2
-        x: 971
-        y: 395
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 55ac14508b2877970800000000000000
-      internalID: 8752608127691639381
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BB2_5
-      rect:
-        serializedVersion: 2
-        x: 994
-        y: 400
-        width: 7
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2603f166b8363c660800000000000000
-      internalID: 7404871662692151394
+      spriteID: 58678bccc2d76264591ad1835254b467
+      internalID: -1949824567
       vertices: []
       indices: 
       edges: []
@@ -250,7 +140,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ad4545b6aca3937479504ca616ad693f
     internalID: 0
     vertices: []
     indices: 
@@ -258,14 +148,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      BB2_0: -5115036366596912123
-      BB2_1: 8038600269597246431
-      BB2_2: 8689935976407282101
-      BB2_3: -2620883019465703791
-      BB2_4: 8752608127691639381
-      BB2_5: 7404871662692151394
+      Bieber_Boss_Idle_0: -1949824567
+      Bieber_Boss_Idle_1: 845054040
+      Bieber_Boss_Idle_2: 2067782516
+      Bieber_Boss_Idle_3: 1484203929
+      Bieber_Boss_Idle_4: -1148444200
+      Bieber_Boss_Idle_5: 1262737958
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
