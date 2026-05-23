@@ -69,4 +69,10 @@ public class EnemyMovement : MonoBehaviour
     {
         Debug.Log("waiting");
     }
+
+    public void DestroyEnemy()
+    {
+        Destroy(gameObject);
+        Debug.Log("enemy destoryed");
+    }
 }
