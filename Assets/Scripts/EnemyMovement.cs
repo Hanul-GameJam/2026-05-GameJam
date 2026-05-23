@@ -11,7 +11,7 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] public float turnWaitTime = 2.0f;
     private float timer = 0f;
     [SerializeField] public bool isEnemyFacingLeft = true;
-    [SerializeField] private AudioSource sfxSource;
+    [SerializeField] protected AudioSource sfxSource;
     [SerializeField] private AudioClip deathSound;
     [Header("Animator")]
     [SerializeField] private bool isWalking;
@@ -24,7 +24,14 @@ public class EnemyMovement : MonoBehaviour
     protected virtual void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();        
+        animator = GetComponent<Animator>();
+
+        // 1. 전역 SFX_Player를 찾아서 소리만 재생시킵니다.
+        GameObject sfxObj = GameObject.Find("SFX_Player");
+        if (sfxObj != null)
+        {
+            AudioSource sfxSource = sfxObj.GetComponent<AudioSource>();
+        }
     }
 
     // Update is called once per frame
