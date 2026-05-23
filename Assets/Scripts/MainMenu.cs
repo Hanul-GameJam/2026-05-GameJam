@@ -4,7 +4,9 @@ using static System.Net.Mime.MediaTypeNames;
 
 public class MainMenu : MonoBehaviour
 {
-    public void OnPlayClick() => SceneManager.LoadScene("Level_1-1");
+    public string nextSceneName;
+
+    public void OnPlayClick() => SceneManager.LoadScene(nextSceneName);
     public void OnExitClick()
     {
         // 2. 실제 완성된 게임에서는 정상적으로 프로그램이 꺼집니다.

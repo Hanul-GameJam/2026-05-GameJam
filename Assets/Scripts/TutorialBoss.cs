@@ -20,6 +20,7 @@ public class TutorialBoss : MonoBehaviour
     [Header("Hurt Settings")]
     [SerializeField] private float hurtWaitTime = 0.5f;
     private bool isHurtThisRest = false;
+    public string nextSceneName;
 
     [Header("Edge Detection")]
     [SerializeField] private Transform edgeCheck;
@@ -259,6 +260,7 @@ public class TutorialBoss : MonoBehaviour
         if (health <= 0)
         {
             UnityEngine.Debug.Log("튜토리얼 보스 처치 완료! (은퇴 축하 컷씬 재생)");
+            StartCoroutine(FadeManager.Instance.FadeAndLoadScene(nextSceneName));
             DestroyPlatform();
             Destroy(gameObject);
         }

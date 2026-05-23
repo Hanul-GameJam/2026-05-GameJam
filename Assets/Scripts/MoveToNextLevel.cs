@@ -4,7 +4,7 @@ using UnityEngine;
 public class MoveToNextLevel : MonoBehaviour
 {
     private Rigidbody2D rb;
-    public int nextLevelIndex;
+    public string nextSceneName;
     
     void Start()
     {
@@ -15,7 +15,7 @@ public class MoveToNextLevel : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            FindAnyObjectByType<GameManager>().LoadNextLevel(nextLevelIndex);
+            StartCoroutine(FadeManager.Instance.FadeAndLoadScene(nextSceneName));
         }
     }
 }
