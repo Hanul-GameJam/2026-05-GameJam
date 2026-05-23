@@ -190,6 +190,8 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  knockbackPowerX: 8
+  knockbackPowerY: 8
 --- !u!1 &9195626461047025608
 GameObject:
   m_ObjectHideFlags: 0
