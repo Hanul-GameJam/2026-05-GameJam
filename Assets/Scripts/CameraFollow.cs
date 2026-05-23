@@ -3,15 +3,15 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    [Header("추적 설정")]
+    [Header("Tracking Settings")]
     [SerializeField] private Transform target; // 이제 인스펙터에서 비워두어도 자동으로 찾습니다.
     [SerializeField] private float smoothTime = 0.2f; // 따라가는 속도 (낮을수록 빠르게 쫓아감)
 
-    [Header("위치 보정")]
+    [Header("Position Offset")]
     [Tooltip("카메라의 기본 위치 (Z값은 반드시 -10 등 음수여야 카메라가 화면을 비춥니다)")]
     [SerializeField] private Vector3 offset = new Vector3(0f, 2f, -10f);
 
-    [Header("카메라 이동 제한 (선택사항)")]
+    [Header("Camera Bounds (Optional)")]
     [SerializeField] private bool useBounds = false;
     [SerializeField] private float minY = -5f; // 카메라가 이보다 더 아래로 내려가지 않음
 

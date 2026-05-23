@@ -45,8 +45,14 @@ public class EnemyMovement : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
-        {
-            Debug.Log("enemy contact with player tag");
+        {            // 1. 충돌한 플레이어 오브젝트에서 getDamage 함수가 있는 스크립트를 가져옵니다.
+            PlayerController pc = collision.gameObject.GetComponent<PlayerController>();
+
+            // 2. 스크립트가 정상적으로 존재한다면 함수를 호출합니다.
+            if (pc != null)
+            {
+                pc.getDamage(1, transform);
+            }
         }
     }
 
