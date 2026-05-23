@@ -6,6 +6,7 @@ TagManager:
   tags:
   - EnemyBody
   - AudioPlayer
+  - EnemyHeadCheck
   layers:
   - Default
   - TransparentFX

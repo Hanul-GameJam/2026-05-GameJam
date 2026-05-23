@@ -17,6 +17,9 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private bool isWalking;
     [SerializeField] private Animator animator;
 
+    private float lastDamageTime = 0f;
+    [SerializeField] public float damageCooldown = 1.0f;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -49,15 +52,25 @@ public class EnemyMovement : MonoBehaviour
     {
         ContactPoint2D contact = collision.GetContact(0);
 
-        if (!(contact.normal.y < -0.5f) && collision.gameObject.CompareTag("Player"))
+        if (!(contact.normal.y < -0.9f) && collision.gameObject.CompareTag("Player"))
         {            
             // 1. 충돌한 플레이어 오브젝트에서 getDamage 함수가 있는 스크립트를 가져옵니다.
             PlayerController pc = collision.gameObject.GetComponent<PlayerController>();
             // 2. 스크립트가 정상적으로 존재한다면 함수를 호출합니다.
 
-            if (pc != null)
+            if (pc != null && Time.time - lastDamageTime > damageCooldown)
             {
                 pc.getDamage(1, transform);
+                lastDamageTime = Time.time;
+            }
+        }
+
+        if (collision.gameObject.CompareTag("Player"))
+        {
+
+            if (contact.normal.y < -0.5f)
+            {
+                DestroyEnemy();
             }
         }
     }
@@ -102,4 +115,6 @@ public class EnemyMovement : MonoBehaviour
         Destroy(gameObject);
         UnityEngine.Debug.Log("enemy destroyed");
     }
+
+    
 }
