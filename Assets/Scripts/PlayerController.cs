@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float knockbackPowerY = 5f; // 위로 튀어오르는 힘
 
     [Header("Animator")]
-    public bool isWalking;
+    [SerializeField] private bool isWalking;
     [SerializeField] private Animator animator;
 
     private Rigidbody2D rb;
@@ -129,7 +129,6 @@ public class PlayerController : MonoBehaviour
     {
         // 코요테 타임 (Coyote Time) 갱신
         // 바닥에 닿아있으면 타이머 초기화, 공중이면 시간에 따라 감소
-
         if (isGrounded)
         {
             coyoteTimeCounter = coyoteTime;

@@ -1,7 +1,4 @@
 using System.Collections;
-using System.Numerics;
-using System.Runtime.Serialization;
-using System.Threading;
 using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
@@ -15,11 +12,16 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] public float turnWaitTime = 2.0f;
     private float timer = 0f;
     [SerializeField] public bool isEnemyFacingLeft = true;
+
+    [Header("Animator")]
+    [SerializeField] private bool isWalking;
+    [SerializeField] private Animator animator;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        
+        animator = GetComponent<Animator>();        
     }
 
     // Update is called once per frame
@@ -31,6 +33,7 @@ public class EnemyMovement : MonoBehaviour
         {
             Invoke("Wait", turnWaitTime);
             timer = 0.0f;
+            animator.SetBool("isWalking", false);
             
             isEnemyFacingLeft = !isEnemyFacingLeft;
         }
@@ -47,10 +50,10 @@ public class EnemyMovement : MonoBehaviour
         ContactPoint2D contact = collision.GetContact(0);
 
         if (!(contact.normal.y < -0.5f) && collision.gameObject.CompareTag("Player"))
-        {            // 1. Ãæµ¹ÇÑ ÇÃ·¹ÀÌ¾î ¿ÀºêÁ§Æ®¿¡¼­ getDamage ÇÔ¼ö°¡ ÀÖ´Â ½ºÅ©¸³Æ®¸¦ °¡Á®¿É´Ï´Ù.
+        {            // 1. ï¿½æµ¹ï¿½ï¿½ ï¿½Ã·ï¿½ï¿½Ì¾ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½ getDamage ï¿½Ô¼ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½Å©ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½É´Ï´ï¿½.
             PlayerController pc = collision.gameObject.GetComponent<PlayerController>();
 
-            // 2. ½ºÅ©¸³Æ®°¡ Á¤»óÀûÀ¸·Î Á¸ÀçÇÑ´Ù¸é ÇÔ¼ö¸¦ È£ÃâÇÕ´Ï´Ù.
+            // 2. ï¿½ï¿½Å©ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ñ´Ù¸ï¿½ ï¿½Ô¼ï¿½ï¿½ï¿½ È£ï¿½ï¿½ï¿½Õ´Ï´ï¿½.
             if (pc != null)
             {
                 pc.getDamage(1, transform);
@@ -59,7 +62,12 @@ public class EnemyMovement : MonoBehaviour
     }
 
     private void EnemyRoaming(bool isEnemyFacingLeft)
-    {   
+    {
+        animator.SetBool("isWalking", true);
+
+        float transformScaleX = Mathf.Sign(isEnemyFacingLeft ? -1 : 1) * Mathf.Abs(transform.localScale.x);
+        transform.localScale = new Vector3(transformScaleX, transform.localScale.y, transform.localScale.z);
+        
         //rb.AddForce(UnityEngine.Vector2.right * EnemySpeed, ForceMode2D.Impulse);
         if (!isEnemyFacingLeft)
         {
@@ -69,8 +77,6 @@ public class EnemyMovement : MonoBehaviour
         {
             transform.position += UnityEngine.Vector3.left * EnemySpeed * Time.deltaTime;
         }
-        
-        
     }
 
     private void Wait()
