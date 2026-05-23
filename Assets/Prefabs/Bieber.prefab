@@ -215,3 +215,4 @@ MonoBehaviour:
   chaseSpeed: 10
   attackRange: 5
   attackCooldownTimer: 1.2
+  attackSound: {fileID: 8300000, guid: 087464d31e22b7c49a2031544097716a, type: 3}
