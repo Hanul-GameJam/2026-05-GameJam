@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d5cd371d95d6c71498da0e44bc578cba
+guid: fa63b8cb18e7a694bbc07a6cf7bc65cc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3933980559016205197
-    second: BA1_0
+      213: -7959872370875064453
+    second: Bieber_Attack_1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,20 +103,20 @@ TextureImporter:
       name: Bieber_Attack_1_0
       rect:
         serializedVersion: 2
-        x: 56
-        y: 274
-        width: 968
-        height: 1100
+        x: 12
+        y: 67
+        width: 244
+        height: 278
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d8b147da97e489630800000000000000
-      internalID: 3933980559016205197
+      spriteID: b7f9b8c704ad88190800000000000000
+      internalID: -7959872370875064453
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 2747199c85a0e38499f9e190e86a2ab2
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Bieber_Attack_1_0: 3933980559016205197
+      Bieber_Attack_1_0: -7959872370875064453
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

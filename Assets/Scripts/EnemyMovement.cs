@@ -15,20 +15,20 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private AudioClip deathSound;
     [Header("Animator")]
     [SerializeField] private bool isWalking;
-    [SerializeField] private Animator animator;
+    [SerializeField] protected Animator animator;
 
     private float lastDamageTime = 0f;
     [SerializeField] public float damageCooldown = 1.0f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    protected virtual void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();        
     }
 
     // Update is called once per frame
-    void Update()
+    protected virtual void Update()
     {
         // UnityEngine.Vector3 move = new UnityEngine.Vector3(1, 0, 0);
         timer += Time.deltaTime;
