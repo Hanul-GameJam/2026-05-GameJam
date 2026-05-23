@@ -46,7 +46,7 @@ public class EnemyMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Player health decreased");
+            Debug.Log("enemy contact with player tag");
         }
     }
 
@@ -68,5 +68,11 @@ public class EnemyMovement : MonoBehaviour
     private void Wait()
     {
         Debug.Log("waiting");
+    }
+
+    public void DestroyEnemy()
+    {
+        Destroy(gameObject);
+        Debug.Log("enemy destoryed");
     }
 }
