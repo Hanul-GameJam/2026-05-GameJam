@@ -1,5 +1,4 @@
-﻿using System.Diagnostics;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
@@ -10,6 +9,7 @@ public class PlayerController : MonoBehaviour
     [Header("Movement Settings")]
     [SerializeField] private float moveSpeed = 8f;
     [SerializeField] private float jumpForce = 16f;
+    public Transform topLeftBoundary, bottomRightBoundary;
 
     [Header("Control Assists (Coyote Time & Buffer)")]
     [SerializeField] private float coyoteTime = 0.2f;
@@ -18,14 +18,20 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float jumpBufferTime = 0.2f;
     private float jumpBufferCounter;
 
+
     [Header("Ground Detection")]
     [SerializeField] private Transform groundCheck;
     [SerializeField] private float groundCheckRadius = 0.2f;
     [SerializeField] private LayerMask groundLayer;
 
+
     [Header("Knockback Settings")]
     [SerializeField] private float knockbackPowerX = 5f; // 뒤로 밀려나는 힘
     [SerializeField] private float knockbackPowerY = 5f; // 위로 튀어오르는 힘
+
+    [Header("Animator")]
+    public bool isWalking;
+    [SerializeField] private Animator animator;
 
     private Rigidbody2D rb;
     private float horizontalInput;
@@ -36,10 +42,37 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         rb.interpolation = RigidbodyInterpolation2D.Interpolate;
         rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
+        animator = GetComponent<Animator>();
     }
 
     void Update()
     {
+        Vector2 clampedPosition = rb.position;
+
+        clampedPosition.x = Mathf.Clamp(
+            clampedPosition.x,
+            topLeftBoundary.position.x,
+            bottomRightBoundary.position.x
+        );
+
+        clampedPosition.y = Mathf.Clamp(
+            clampedPosition.y,
+            bottomRightBoundary.position.y,
+            topLeftBoundary.position.y
+        );
+
+        rb.position = clampedPosition;
+
+        if (rb.position.x <= topLeftBoundary.position.x && horizontalInput < 0)
+        {
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+        }
+
+        if (rb.position.y <= bottomRightBoundary.position.y && rb.linearVelocity.y < 0)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
+        }
+
         HandleInput();
     }
 
@@ -56,13 +89,30 @@ public class PlayerController : MonoBehaviour
         horizontalInput = 0f;
 
         // 키보드가 연결되어 있지 않으면 예외 처리
-        if (Keyboard.current == null) return;
+        if (Keyboard.current == null || animator == null)
+        {
+            Debug.LogWarning("Keyboard or Animator component is missing.");
+            
+            return;
+        }
+
+        if (horizontalInput == 0f) {
+            animator.SetBool("isWalking", false);
+        }
 
         // 좌우 이동 (A, D 및 좌우 방향키)
         if (Keyboard.current.aKey.isPressed || Keyboard.current.leftArrowKey.isPressed)
+        {
             horizontalInput = -1f;
+
+            animator.SetBool("isWalking", true);
+        }
         else if (Keyboard.current.dKey.isPressed || Keyboard.current.rightArrowKey.isPressed)
+        {
             horizontalInput = 1f;
+
+            animator.SetBool("isWalking", true);
+        }
 
         // 점프 선입력 버퍼 (Jump Buffer) 갱신
         if (Keyboard.current.wKey.wasPressedThisFrame || Keyboard.current.upArrowKey.wasPressedThisFrame || Keyboard.current.spaceKey.wasPressedThisFrame)
@@ -79,6 +129,7 @@ public class PlayerController : MonoBehaviour
     {
         // 코요테 타임 (Coyote Time) 갱신
         // 바닥에 닿아있으면 타이머 초기화, 공중이면 시간에 따라 감소
+
         if (isGrounded)
         {
             coyoteTimeCounter = coyoteTime;
