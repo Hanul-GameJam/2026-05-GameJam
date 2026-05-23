@@ -44,7 +44,9 @@ public class EnemyMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        ContactPoint2D contact = collision.GetContact(0);
+
+        if (!(contact.normal.y < -0.5f) && collision.gameObject.CompareTag("Player"))
         {            // 1. 충돌한 플레이어 오브젝트에서 getDamage 함수가 있는 스크립트를 가져옵니다.
             PlayerController pc = collision.gameObject.GetComponent<PlayerController>();
 
