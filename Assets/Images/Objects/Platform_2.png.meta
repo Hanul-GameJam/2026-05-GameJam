@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 2a4cb1d24253f8841b9ea052cb6163de
+guid: 97f820e114dec9e4bbd48260286dacea
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6937817954938267909
-    second: 2_0
+      213: 6677809912776899069
+    second: Platform_2_0
+  - first:
+      213: -8318379524411776812
+    second: Platform_2_1
+  - first:
+      213: -5480681879523450743
+    second: Platform_2_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bieber_Walking_3_0
+      name: Platform_2_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 250
-        height: 242
+        x: 491
+        y: 238
+        width: 517
+        height: 211
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +121,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5092c600ca4184060800000000000000
-      internalID: 6937817954938267909
+      spriteID: 4d0ad8c25ed2f8c80800000000000000
+      internalID: -8318379524411776812
       vertices: []
       indices: 
       edges: []
@@ -125,7 +131,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 0e7d84855f7c3b243836a02fa2f337c6
+    spriteID: ed780304eb328674e9b2171b78e5b833
     internalID: 0
     vertices: []
     indices: 
@@ -133,11 +139,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      Bieber_Walking_3_0: 6937817954938267909
+      Platform_2_0: 6677809912776899069
+      Platform_2_1: -8318379524411776812
+      Platform_2_2: -5480681879523450743
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
