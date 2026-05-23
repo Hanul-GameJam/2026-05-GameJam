@@ -44,9 +44,6 @@ MonoBehaviour:
     dialogue: "\"\uADF8\uAC8C \uBB34\uC2A8 \uC18C\uB9AC\uC2ED\uB2C8\uAE4C...\""
   - portrait: {fileID: -896319470, guid: 87e1789e24d60694e9228bf39aaf9a66, type: 3}
     characterName: "\uD2B8\uB808\uBAB0\uB85C"
-    dialogue: "\"\uADF8\uAC8C \uBB34\uC2A8 \uC18C\uB9AC\uC2ED\uB2C8\uAE4C...\""
-  - portrait: {fileID: -896319470, guid: 87e1789e24d60694e9228bf39aaf9a66, type: 3}
-    characterName: "\uD2B8\uB808\uBAB0\uB85C"
     dialogue: "\"\uC800\uD770 \uC900\uBE44\uD574 \uB193\uC558\uB358 \"\uC1A1\uBCC4\uD68C
       \uD30C\uD2F0\"\uC5D0 \uCD08\uB300\uD558\uB824\uACE0 \uD588\uB2E8 \uB9D0\uC785\uB2C8\uB2E4...!\""
   - portrait: {fileID: 665538603, guid: af9e5c4b2b97ff54c81361d029e7211e, type: 3}
