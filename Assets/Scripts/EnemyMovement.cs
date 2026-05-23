@@ -49,7 +49,7 @@ public class EnemyMovement : MonoBehaviour
     {
         ContactPoint2D contact = collision.GetContact(0);
 
-        if (!(contact.normal.y < -0.5f) && collision.gameObject.CompareTag("Player"))
+        if (!(contact.normal.y < -0.9f) && collision.gameObject.CompareTag("Player"))
         {            
             // 1. 충돌한 플레이어 오브젝트에서 getDamage 함수가 있는 스크립트를 가져옵니다.
             PlayerController pc = collision.gameObject.GetComponent<PlayerController>();
@@ -58,6 +58,15 @@ public class EnemyMovement : MonoBehaviour
             if (pc != null)
             {
                 pc.getDamage(1, transform);
+            }
+        }
+
+        if (collision.gameObject.CompareTag("Player"))
+        {
+
+            if (contact.normal.y < -0.5f)
+            {
+                DestroyEnemy();
             }
         }
     }
@@ -102,4 +111,6 @@ public class EnemyMovement : MonoBehaviour
         Destroy(gameObject);
         UnityEngine.Debug.Log("enemy destroyed");
     }
+
+    
 }

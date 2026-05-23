@@ -23,9 +23,13 @@ public class EnemyHeadCollision : MonoBehaviour
         {
             Debug.Log("destroy enemy");
             // Debug.Log("head contact with player");
-            enemyMovement.DestroyEnemy();
+            // enemyMovement.DestroyEnemy();
             
         }
+
+        
+
+        
     }
 
     
