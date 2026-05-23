@@ -131,7 +131,7 @@ public class PlayerController : MonoBehaviour
         }
 
         // 점프 선입력 버퍼 (Jump Buffer) 갱신
-        if (Keyboard.current.wKey.wasPressedThisFrame || Keyboard.current.upArrowKey.wasPressedThisFrame || Keyboard.current.spaceKey.wasPressedThisFrame)
+        if (isGrounded && (Keyboard.current.wKey.wasPressedThisFrame || Keyboard.current.upArrowKey.wasPressedThisFrame || Keyboard.current.spaceKey.wasPressedThisFrame))
         {
             jumpBufferCounter = jumpBufferTime;
         }
