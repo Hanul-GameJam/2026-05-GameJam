@@ -36,9 +36,6 @@ MonoBehaviour:
     dialogue: "\"\"\uD574\uB2EC\uBCC4\" \uC870\uC9C1\uC758 \uBCF4\uC2A4\uC758 \uC624\uB978\uD314,\""
   - portrait: {fileID: -1949824567, guid: 44f34ec5fdf5e2d4db503b1552ebac33, type: 3}
     characterName: ???
-    dialogue: "\"\"\uD574\uB2EC\uBCC4\" \uC870\uC9C1\uC758 \uBCF4\uC2A4\uC758 \uC624\uB978\uD314,\""
-  - portrait: {fileID: -1949824567, guid: 44f34ec5fdf5e2d4db503b1552ebac33, type: 3}
-    characterName: ???
     dialogue: "\"\"\uCE7C\uB9BD\uC18C\" \uC528 \uC544\uB2C8\uC2ED\uB2C8\uAE4C\uC694\uC624.\""
   - portrait: {fileID: 665538603, guid: af9e5c4b2b97ff54c81361d029e7211e, type: 3}
     characterName: "\uB2F9\uC2E0"
@@ -64,10 +61,6 @@ MonoBehaviour:
   - portrait: {fileID: -1949824567, guid: 44f34ec5fdf5e2d4db503b1552ebac33, type: 3}
     characterName: "\uBBF8\uC2A4\uD2F0"
     dialogue: "\"\uCD5C\uADFC \uC601\uC5ED \uD655\uC7A5\uC744 \uD588\uC2B5\uC8E0\uC624.\""
-  - portrait: {fileID: 665538603, guid: af9e5c4b2b97ff54c81361d029e7211e, type: 3}
-    characterName: "\uB2F9\uC2E0"
-    dialogue: "\"\uC774 \uADFC\uCC98 \uAD6C\uC5ED\uC740 \"\uD574\uB2EC\uBCC4\"\uC774
-      \uAD00\uB9AC\uD558\uB294 \uC601\uC5ED\uC778\uB370...\""
   - portrait: {fileID: 665538603, guid: af9e5c4b2b97ff54c81361d029e7211e, type: 3}
     characterName: "\uB2F9\uC2E0"
     dialogue: "\"\uC774 \uADFC\uCC98 \uAD6C\uC5ED\uC740 \"\uD574\uB2EC\uBCC4\"\uC774
