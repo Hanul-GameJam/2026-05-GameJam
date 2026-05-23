@@ -31,6 +31,9 @@ public class TutorialBoss : MonoBehaviour
     [SerializeField] private float platformSpawnHeight = 3f;
     private GameObject currentPlatform;
 
+    [Header("Animation")]
+    [SerializeField] private Animator animator;
+
     private Transform player;
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
@@ -41,7 +44,7 @@ public class TutorialBoss : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-
+        animator = GetComponent<Animator>();
         GameObject p = GameObject.FindWithTag("Player");
         if (p != null) player = p.transform;
 
@@ -59,21 +62,34 @@ public class TutorialBoss : MonoBehaviour
         switch (currentState)
         {
             case BossState.Chase:
+                animator.SetBool("isWalking", true);
+                animator.SetBool("isDashing", false);
                 HandleChase();
                 break;
             case BossState.PrepareDash:
+                animator.SetBool("isWalking", false);
+                animator.SetBool("isDashing", true);
+                rb.linearVelocity = new Vector2(0, rb.linearVelocity.y); // 준비할 때는 멈춤
+                break;
             case BossState.Resting:
+                animator.SetBool("isWalking", false);
+                animator.SetBool("isDashing", false);
                 rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
                 break;
             case BossState.Dashing:
                 if (!IsGroundAhead())
                 {
+                    animator.SetBool("isWalking", false);
+                    animator.SetBool("isDashing", false);
                     rb.linearVelocity = new Vector2(0, rb.linearVelocity.y); // 즉시 브레이크
+                    
                     StartCoroutine(RestRoutine());
                 }
                 else
                 {
                     // 바닥이 있을 때만 전진
+                    animator.SetBool("isWalking", false);
+                    animator.SetBool("isDashing", true);
                     rb.linearVelocity = new Vector2(facingDirection * dashSpeed, rb.linearVelocity.y);
                 }
                 break;

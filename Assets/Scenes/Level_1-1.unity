@@ -201,7 +201,11 @@ Transform:
   m_GameObject: {fileID: 134328782}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+<<<<<<< Updated upstream
   m_LocalPosition: {x: -24.28, y: 8, z: 0}
+=======
+  m_LocalPosition: {x: -23.04, y: 6.3, z: 0}
+>>>>>>> Stashed changes
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -413,7 +417,11 @@ Transform:
   m_GameObject: {fileID: 312357217}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+<<<<<<< Updated upstream
   m_LocalPosition: {x: 33.63, y: -8, z: 0}
+=======
+  m_LocalPosition: {x: 33.65, y: -7, z: 0}
+>>>>>>> Stashed changes
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -944,6 +952,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f9972904895e70439817068c92dbfac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventSystemManager
+--- !u!1001 &1962482236
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4500014468426824574, guid: cec336051aeef1341a491aef9e2ffa17, type: 3}
+      propertyPath: m_Name
+      value: Chair
+      objectReference: {fileID: 0}
+    - target: {fileID: 4825731607218304189, guid: cec336051aeef1341a491aef9e2ffa17, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 18.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4825731607218304189, guid: cec336051aeef1341a491aef9e2ffa17, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -6.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 4825731607218304189, guid: cec336051aeef1341a491aef9e2ffa17, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4825731607218304189, guid: cec336051aeef1341a491aef9e2ffa17, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4825731607218304189, guid: cec336051aeef1341a491aef9e2ffa17, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4825731607218304189, guid: cec336051aeef1341a491aef9e2ffa17, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4825731607218304189, guid: cec336051aeef1341a491aef9e2ffa17, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4825731607218304189, guid: cec336051aeef1341a491aef9e2ffa17, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4825731607218304189, guid: cec336051aeef1341a491aef9e2ffa17, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4825731607218304189, guid: cec336051aeef1341a491aef9e2ffa17, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cec336051aeef1341a491aef9e2ffa17, type: 3}
 --- !u!1001 &129259468414175208
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1096,11 +1161,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5094895583263154925, guid: 05daf637d523e284e80fbae5c1cfa28e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 4.66956
+      value: 4.14
       objectReference: {fileID: 0}
     - target: {fileID: 5094895583263154925, guid: 05daf637d523e284e80fbae5c1cfa28e, type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< Updated upstream
       value: 3.7
+=======
+      value: 4.95
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 5094895583263154925, guid: 05daf637d523e284e80fbae5c1cfa28e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1657,11 +1726,18 @@ SceneRoots:
   - {fileID: 485621918}
   - {fileID: 1034576591}
   - {fileID: 2788389413629265798}
+<<<<<<< Updated upstream
+=======
+  - {fileID: 1962482236}
+>>>>>>> Stashed changes
   - {fileID: 5997904860166514868}
   - {fileID: 7851385582731330702}
   - {fileID: 1938863130}
   - {fileID: 8707923159582674155}
+<<<<<<< Updated upstream
   - {fileID: 3499541396493960232}
+=======
+>>>>>>> Stashed changes
   - {fileID: 797451756}
   - {fileID: 129348391}
   - {fileID: 1302224486}
