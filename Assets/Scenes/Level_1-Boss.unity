@@ -144,11 +144,7 @@ Transform:
   m_GameObject: {fileID: 134328782}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-<<<<<<< Updated upstream
-  m_LocalPosition: {x: -25, y: 8, z: 0}
-=======
   m_LocalPosition: {x: -23.78, y: 6.3, z: 0}
->>>>>>> Stashed changes
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -179,11 +175,7 @@ Transform:
   m_GameObject: {fileID: 312357217}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-<<<<<<< Updated upstream
-  m_LocalPosition: {x: 33.8, y: -8, z: 0}
-=======
   m_LocalPosition: {x: 33.31, y: -8, z: 0}
->>>>>>> Stashed changes
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -641,49 +633,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-<<<<<<< Updated upstream
-    - target: {fileID: 2602074268859401827, guid: 58a8bd209fe2f6d41ae85a25eb6dee36, type: 3}
-      propertyPath: m_Name
-      value: TutorialBoss
-      objectReference: {fileID: 0}
-    - target: {fileID: 7766523920830119271, guid: 58a8bd209fe2f6d41ae85a25eb6dee36, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7766523920830119271, guid: 58a8bd209fe2f6d41ae85a25eb6dee36, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -5.47
-      objectReference: {fileID: 0}
-    - target: {fileID: 7766523920830119271, guid: 58a8bd209fe2f6d41ae85a25eb6dee36, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7766523920830119271, guid: 58a8bd209fe2f6d41ae85a25eb6dee36, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7766523920830119271, guid: 58a8bd209fe2f6d41ae85a25eb6dee36, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7766523920830119271, guid: 58a8bd209fe2f6d41ae85a25eb6dee36, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7766523920830119271, guid: 58a8bd209fe2f6d41ae85a25eb6dee36, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7766523920830119271, guid: 58a8bd209fe2f6d41ae85a25eb6dee36, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7766523920830119271, guid: 58a8bd209fe2f6d41ae85a25eb6dee36, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7766523920830119271, guid: 58a8bd209fe2f6d41ae85a25eb6dee36, type: 3}
-=======
     - target: {fileID: 2602074268859401827, guid: db714d46b04d4954486bfe4bb688e604, type: 3}
       propertyPath: m_Name
       value: TutorialBoss
@@ -725,7 +674,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7766523920830119271, guid: db714d46b04d4954486bfe4bb688e604, type: 3}
->>>>>>> Stashed changes
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
@@ -733,11 +681,7 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-<<<<<<< Updated upstream
-  m_SourcePrefab: {fileID: 100100000, guid: 58a8bd209fe2f6d41ae85a25eb6dee36, type: 3}
-=======
   m_SourcePrefab: {fileID: 100100000, guid: db714d46b04d4954486bfe4bb688e604, type: 3}
->>>>>>> Stashed changes
 --- !u!1001 &1781960826733909646
 PrefabInstance:
   m_ObjectHideFlags: 0
