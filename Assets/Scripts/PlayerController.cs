@@ -19,6 +19,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float jumpBufferTime = 0.2f;
     private float jumpBufferCounter;
 
+    [Header("Audio Settings")]
+    [SerializeField] private AudioSource sfxSource;
+    [SerializeField] private AudioClip jumpSound; // 준비한 점프 효과음 파일
+    [SerializeField] private AudioClip hurtSound;
+    [SerializeField] private AudioClip deadSound;
+
 
     [Header("Ground Detection")]
     [SerializeField] private Transform groundCheck;
@@ -44,6 +50,11 @@ public class PlayerController : MonoBehaviour
         rb.interpolation = RigidbodyInterpolation2D.Interpolate;
         rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
         animator = GetComponent<Animator>();
+        if (sfxSource == null)
+        {
+            GameObject sfxObj = GameObject.Find("SFX_Player");
+            if (sfxObj != null) sfxSource = sfxObj.GetComponent<AudioSource>();
+        }
     }
 
     void Update()
@@ -162,6 +173,11 @@ public class PlayerController : MonoBehaviour
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f); // y 속도 초기화로 일관된 점프력 보장
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
 
+            if (sfxSource != null && jumpSound != null)
+            {
+                sfxSource.PlayOneShot(jumpSound);
+            }
+
             // 점프 후 카운터 즉시 0으로 만들어 이중 점프 방지
             jumpBufferCounter = 0f;
             coyoteTimeCounter = 0f;
@@ -191,6 +207,11 @@ public class PlayerController : MonoBehaviour
         this.Health -= value;
         UnityEngine.Debug.Log("current_health = " + this.Health);
 
+        if (sfxSource != null && hurtSound != null)
+        {
+            sfxSource.PlayOneShot(hurtSound);
+        }
+
         if (rb != null && attacker != null)
         {
             // 내 위치와 공격자의 위치를 비교해 튕겨나갈 방향(왼쪽 -1, 오른쪽 1)을 계산합니다.
@@ -213,6 +234,11 @@ public class PlayerController : MonoBehaviour
         if (this.Health < 1)
         {
             UnityEngine.Debug.Log("ran out of health");
+
+            if (sfxSource != null && deadSound != null)
+            {
+                sfxSource.PlayOneShot(deadSound);
+            }
             Destroy(gameObject);
         }
     }
