@@ -924,7 +924,7 @@ PrefabInstance:
       objectReference: {fileID: 1848998673}
     - target: {fileID: 5879931357228020878, guid: 58a8bd209fe2f6d41ae85a25eb6dee36, type: 3}
       propertyPath: nextSceneName
-      value: Level_1-Boss_Defeat
+      value: Level_1-Boss_DefeatScene
       objectReference: {fileID: 0}
     - target: {fileID: 7766523920830119271, guid: 58a8bd209fe2f6d41ae85a25eb6dee36, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1478,3 +1478,5 @@ SceneRoots:
   - {fileID: 1720309618}
   - {fileID: 89416226}
   - {fileID: 561259484}
+  - {fileID: 1278777413}
+  - {fileID: 2006455421}
