@@ -15,7 +15,7 @@ public class MoveToNextLevel : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            StartCoroutine(FadeManager.Instance.FadeAndLoadScene(nextSceneName));
+            FadeManager.Instance.LoadSceneWithFade(nextSceneName);
         }
     }
 }

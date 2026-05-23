@@ -94,7 +94,7 @@ public class CutsceneManager : MonoBehaviour
 
         if (currentLineIndex >= dialogueData.lines.Length)
         {
-            StartCoroutine(FadeManager.Instance.FadeAndLoadScene(nextSceneName));
+            FadeManager.Instance.LoadSceneWithFade(nextSceneName);
 
             return;
         }

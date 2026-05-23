@@ -65,7 +65,12 @@ public class FadeManager : MonoBehaviour
         }
     }
 
-    public IEnumerator FadeAndLoadScene(string sceneName)
+    public void LoadSceneWithFade(string sceneName)
+    {
+        StartCoroutine(FadeAndLoadScene(sceneName));
+    }
+
+    private IEnumerator FadeAndLoadScene(string sceneName)
     {
         // 어두워짐
         yield return StartCoroutine(FadeOut());

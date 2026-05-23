@@ -260,7 +260,7 @@ public class TutorialBoss : MonoBehaviour
         if (health <= 0)
         {
             UnityEngine.Debug.Log("튜토리얼 보스 처치 완료! (은퇴 축하 컷씬 재생)");
-            StartCoroutine(FadeManager.Instance.FadeAndLoadScene(nextSceneName));
+            FadeManager.Instance.LoadSceneWithFade(nextSceneName);
             DestroyPlatform();
             Destroy(gameObject);
         }
