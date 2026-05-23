@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Diagnostics;
+using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
@@ -91,7 +92,7 @@ public class PlayerController : MonoBehaviour
         // 키보드가 연결되어 있지 않으면 예외 처리
         if (Keyboard.current == null || animator == null)
         {
-            Debug.LogWarning("Keyboard or Animator component is missing.");
+            UnityEngine.Debug.LogWarning("Keyboard or Animator component is missing.");
             
             return;
         }
@@ -207,6 +208,12 @@ public class PlayerController : MonoBehaviour
 
             // 💡 3. 0.3초(원하는 넉백 지속 시간) 뒤에 다시 조작 가능하도록 함수를 예약 실행합니다.
             Invoke(nameof(RestoreControl), 0.3f);
+        }
+
+        if (this.Health < 1)
+        {
+            UnityEngine.Debug.Log("ran out of health");
+            Destroy(gameObject);
         }
     }
 
