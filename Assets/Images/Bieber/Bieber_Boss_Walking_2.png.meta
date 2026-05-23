@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 27cbb34304f04aa448808597da413689
+guid: f4d752e5f687d0a40890a7fe0a5400c4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1545640437691131190
-    second: SO2_0
+      213: 2297612352394097118
+    second: BB3_0
+  - first:
+      213: -8380386054100477410
+    second: BB3_1
+  - first:
+      213: 9172769352282673037
+    second: BB3_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +106,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sea Otter_Walking_1_0
+      name: BB3_0
       rect:
         serializedVersion: 2
-        x: 590
-        y: 316
-        width: 324
-        height: 414
+        x: 11
+        y: 0
+        width: 1525
+        height: 1024
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 3724166e31149db44b02d76f53992251
-      internalID: 269740789
+      spriteID: ed1ffffd242c2ef10800000000000000
+      internalID: 2297612352394097118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BB3_1
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 307
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1a14b4f843e2bb80800000000000000
+      internalID: -8380386054100477410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BB3_2
+      rect:
+        serializedVersion: 2
+        x: 1267
+        y: 307
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8f066160293c4f70800000000000000
+      internalID: 9172769352282673037
       vertices: []
       indices: 
       edges: []
@@ -125,7 +175,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: afe28f8f68bc9264bb0d3fe98dd4a148
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -133,11 +183,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      Sea Otter_Walking_1_0: 269740789
+      BB3_0: 2297612352394097118
+      BB3_1: -8380386054100477410
+      BB3_2: 9172769352282673037
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
