@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -40,9 +41,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private bool isWalking;
     [SerializeField] private Animator animator;
 
+    
+
     private Rigidbody2D rb;
     private float horizontalInput;
     private bool isGrounded;
+    
 
     void Start()
     {
@@ -243,7 +247,7 @@ public class PlayerController : MonoBehaviour
     }
 
     // 잠시 꺼뒀던 조작 권한을 다시 켜주는 함수
-    private void RestoreControl()
+    public void RestoreControl()
     {
         PlayerController controller = GetComponent<PlayerController>();
         if (controller != null)
@@ -251,4 +255,6 @@ public class PlayerController : MonoBehaviour
             controller.enabled = true;
         }
     }
+
+    
 }

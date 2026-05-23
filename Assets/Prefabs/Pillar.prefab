@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 6848478849090299265}
   - component: {fileID: 1548416835354778335}
   - component: {fileID: 7023183212935384041}
+  - component: {fileID: 4886840808839449957}
   m_Layer: 6
   m_Name: Pillar
-  m_TagString: Untagged
+  m_TagString: Pillar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -166,3 +167,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 15.36, y: 0.5}
   m_EdgeRadius: 0
+--- !u!114 &4886840808839449957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2838343573851746856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cc1c3ff97e0b334db7af2c7cf71b711, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PillarCollision
+  rb: {fileID: 0}
+  knockbackPowerX: 15
+  knockbackPowerY: 15
