@@ -59,6 +59,7 @@ public class PlayerController : MonoBehaviour
             GameObject sfxObj = GameObject.Find("SFX_Player");
             if (sfxObj != null) sfxSource = sfxObj.GetComponent<AudioSource>();
         }
+        HealthUIManager.instance.UpdateHealthDisplay(this.Health);
     }
 
     void Update()
@@ -233,6 +234,9 @@ public class PlayerController : MonoBehaviour
             // 💡 3. 0.3초(원하는 넉백 지속 시간) 뒤에 다시 조작 가능하도록 함수를 예약 실행합니다.
             Invoke(nameof(RestoreControl), 0.3f);
         }
+
+        // 💡 체력이 깎인 직후, UI 매니저를 불러서 화면을 업데이트합니다!
+        HealthUIManager.instance.UpdateHealthDisplay(this.Health);
 
         if (this.Health < 1)
         {
