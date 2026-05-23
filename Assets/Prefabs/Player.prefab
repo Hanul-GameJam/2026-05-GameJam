@@ -61,8 +61,8 @@ Transform:
   m_GameObject: {fileID: 7413980797019076676}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -18.89, y: -5.11, z: 0}
-  m_LocalScale: {x: 3.5, y: 4, z: 1}
+  m_LocalPosition: {x: -18.9142, y: -5.1448, z: 0}
+  m_LocalScale: {x: 2.625, y: 3, z: 0.9892}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3292727712642370194}
@@ -188,7 +188,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.15, y: -0.03}
+  m_Offset: {x: 0.11, y: -0.03}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -198,7 +198,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.7, y: 1.74}
+  m_Size: {x: 0.66, y: 1.74}
   m_EdgeRadius: 0
 --- !u!114 &5180402344924495627
 MonoBehaviour:
@@ -219,6 +219,10 @@ MonoBehaviour:
   bottomRightBoundary: {fileID: 0}
   coyoteTime: 0.2
   jumpBufferTime: 0.2
+  sfxSource: {fileID: 0}
+  jumpSound: {fileID: 8300000, guid: f471d4eefc0a5d24bbf3f8c2a69fe3e4, type: 3}
+  hurtSound: {fileID: 8300000, guid: 5b8ade59d92c3be4c9640d1c7ba3fe88, type: 3}
+  deadSound: {fileID: 8300000, guid: 8d91cdcb6face0b499ab7aed365509cc, type: 3}
   groundCheck: {fileID: 3292727712642370194}
   groundCheckRadius: 0.2
   groundLayer:

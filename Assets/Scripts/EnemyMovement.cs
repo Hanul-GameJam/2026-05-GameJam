@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
@@ -12,7 +11,8 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] public float turnWaitTime = 2.0f;
     private float timer = 0f;
     [SerializeField] public bool isEnemyFacingLeft = true;
-
+    [SerializeField] private AudioSource sfxSource;
+    [SerializeField] private AudioClip deathSound;
     [Header("Animator")]
     [SerializeField] private bool isWalking;
     [SerializeField] private Animator animator;
@@ -50,10 +50,11 @@ public class EnemyMovement : MonoBehaviour
         ContactPoint2D contact = collision.GetContact(0);
 
         if (!(contact.normal.y < -0.5f) && collision.gameObject.CompareTag("Player"))
-        {            // 1. �浹�� �÷��̾� ������Ʈ���� getDamage �Լ��� �ִ� ��ũ��Ʈ�� �����ɴϴ�.
+        {            
+            // 1. 충돌한 플레이어 오브젝트에서 getDamage 함수가 있는 스크립트를 가져옵니다.
             PlayerController pc = collision.gameObject.GetComponent<PlayerController>();
+            // 2. 스크립트가 정상적으로 존재한다면 함수를 호출합니다.
 
-            // 2. ��ũ��Ʈ�� ���������� �����Ѵٸ� �Լ��� ȣ���մϴ�.
             if (pc != null)
             {
                 pc.getDamage(1, transform);
@@ -81,12 +82,24 @@ public class EnemyMovement : MonoBehaviour
 
     private void Wait()
     {
-        Debug.Log("waiting");
+        UnityEngine.Debug.Log("waiting");
     }
 
     public void DestroyEnemy()
     {
+        // 1. 전역 SFX_Player를 찾아서 소리만 재생시킵니다.
+        GameObject sfxObj = GameObject.Find("SFX_Player");
+        if (sfxObj != null)
+        {
+            AudioSource sfxSource = sfxObj.GetComponent<AudioSource>();
+            if (sfxSource != null && deathSound != null)
+            {
+                sfxSource.PlayOneShot(deathSound);
+            }
+        }
+
+        // 2. 적은 즉시 파괴해도 소리는 SFX_Player에서 재생되므로 끊기지 않습니다!
         Destroy(gameObject);
-        Debug.Log("enemy destoryed");
+        UnityEngine.Debug.Log("enemy destroyed");
     }
 }
