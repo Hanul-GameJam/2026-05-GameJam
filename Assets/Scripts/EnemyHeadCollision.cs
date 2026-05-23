@@ -4,7 +4,11 @@ using UnityEngine;
 public class EnemyHeadCollision : MonoBehaviour
 {
 
+<<<<<<< Updated upstream
     EnemyMovement enemyMovement;
+=======
+    [SerializeField] EnemyMovement enemyMovement;
+>>>>>>> Stashed changes
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -21,7 +25,11 @@ public class EnemyHeadCollision : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+<<<<<<< Updated upstream
             Debug.Log("destroy enemy");
+=======
+            // Debug.Log("head contact with player");
+>>>>>>> Stashed changes
             enemyMovement.DestroyEnemy();
             
         }

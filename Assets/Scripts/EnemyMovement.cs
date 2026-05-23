@@ -46,7 +46,7 @@ public class EnemyMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Player health decreased");
+            Debug.Log("enemy contact with player tag");
         }
     }
 
