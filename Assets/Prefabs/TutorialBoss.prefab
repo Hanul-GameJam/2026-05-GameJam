@@ -212,6 +212,7 @@ MonoBehaviour:
   restTime: 2.5
   patternCooldown: 4
   hurtWaitTime: 0.5
+  nextSceneName: 
   edgeCheck: {fileID: 8039211648641533193}
   edgeCheckDistance: 1
   groundLayer:
@@ -219,6 +220,8 @@ MonoBehaviour:
     m_Bits: 64
   platformPrefab: {fileID: 7681543068119880724, guid: f9d4cf7905191e84393a9ec70a5ce354, type: 3}
   platformSpawnHeight: 3
+  animator: {fileID: 0}
+  hurtSound: {fileID: 8300000, guid: 8d91cdcb6face0b499ab7aed365509cc, type: 3}
 --- !u!1 &5365146659410930565
 GameObject:
   m_ObjectHideFlags: 0

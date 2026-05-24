@@ -35,6 +35,8 @@ public class TutorialBoss : MonoBehaviour
     [Header("Animation")]
     [SerializeField] private Animator animator;
 
+    [SerializeField] private AudioClip hurtSound;
+
     private Transform player;
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
@@ -256,6 +258,19 @@ public class TutorialBoss : MonoBehaviour
 
         health--;
         UnityEngine.Debug.Log("보스 데미지 입음! 남은 체력: " + health);
+
+        if (hurtSound != null)
+        {
+            GameObject sfxObj = GameObject.Find("SFX_Player");
+            if (sfxObj != null)
+            {
+                AudioSource sfxSource = sfxObj.GetComponent<AudioSource>();
+                if (sfxSource != null)
+                {
+                    sfxSource.PlayOneShot(hurtSound);
+                }
+            }
+        }
 
         if (health <= 0)
         {
