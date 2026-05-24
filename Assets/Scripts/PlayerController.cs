@@ -246,7 +246,8 @@ public class PlayerController : MonoBehaviour
             {
                 sfxSource.PlayOneShot(deadSound);
             }
-            Destroy(gameObject);
+            //Destroy(gameObject);
+            FadeManager.Instance.FadeOutAndLoadScene("GameOverScene");
         }
     }
 
