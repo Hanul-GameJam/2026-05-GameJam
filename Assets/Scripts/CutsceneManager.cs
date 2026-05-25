@@ -58,7 +58,11 @@ public class CutsceneManager : MonoBehaviour
         portraitImage.sprite = line.portrait;
         nameText.text = line.characterName;
 
-        StartCoroutine(TypeDialogue(line.dialogue));
+        // 💡 기존 코드: 
+        // StartCoroutine(TypeDialogue(line.dialogue));
+
+        // 💡 수정된 코드: 대사를 코루틴에 넘기기 전에 띄어쓰기를 줄바꿈 방지 공백으로 바꿔줍니다!
+        StartCoroutine(TypeDialogue(line.dialogue.Replace(" ", "\u00A0")));
     }
 
     IEnumerator TypeDialogue(string dialogue)

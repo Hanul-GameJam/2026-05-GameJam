@@ -2,6 +2,7 @@
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -46,6 +47,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private float horizontalInput;
     private bool isGrounded;
+    // [SerializeField] public string deadSceneName;
     
 
     void Start()
@@ -246,7 +248,13 @@ public class PlayerController : MonoBehaviour
             {
                 sfxSource.PlayOneShot(deadSound);
             }
+<<<<<<< Updated upstream
             Destroy(gameObject);
+
+=======
+            // Destroy(gameObject);
+            FadeManager.Instance.LoadSceneWithFade("GameOverScene");
+>>>>>>> Stashed changes
         }
     }
 
@@ -258,6 +266,11 @@ public class PlayerController : MonoBehaviour
         {
             controller.enabled = true;
         }
+    }
+
+    void OnDestroy()
+    {
+        SceneManager.LoadScene("GameOverScene");
     }
 
     
