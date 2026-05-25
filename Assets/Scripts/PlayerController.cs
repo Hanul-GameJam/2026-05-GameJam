@@ -248,13 +248,7 @@ public class PlayerController : MonoBehaviour
             {
                 sfxSource.PlayOneShot(deadSound);
             }
-<<<<<<< Updated upstream
             Destroy(gameObject);
-
-=======
-            // Destroy(gameObject);
-            FadeManager.Instance.LoadSceneWithFade("GameOverScene");
->>>>>>> Stashed changes
         }
     }
 
