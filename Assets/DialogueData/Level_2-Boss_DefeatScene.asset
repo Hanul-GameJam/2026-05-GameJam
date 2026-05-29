@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d3e8b49b61393344a956d20cc065de6, type: 3}
+  m_Name: Level_2-Boss_DefeatScene
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  lines:
+  - portrait: {fileID: -1949824567, guid: 44f34ec5fdf5e2d4db503b1552ebac33, type: 3}
+    characterName: "\uBBF8\uC2A4\uD2F0"
+    dialogue: "\"\uD06C\uC73C\uC73D...\""
+  - portrait: {fileID: -1949824567, guid: 44f34ec5fdf5e2d4db503b1552ebac33, type: 3}
+    characterName: "\uBBF8\uC2A4\uD2F0"
+    dialogue: "\"\uC5ED\uC2DC \"\uD574\uB2EC\uBCC4\"\uC758 \uC624\uB978\uD314 \uC778\uAC00\uC694\uC624...\""
+  - portrait: {fileID: -1949824567, guid: 44f34ec5fdf5e2d4db503b1552ebac33, type: 3}
+    characterName: "\uBBF8\uC2A4\uD2F0"
+    dialogue: "\"\uD558\uC9C0\uB9CC, \uC808 \uC4F0\uB7EC\uB728\uB9AC\uC168\uC5B4\uB3C4,
+      \uD3B8\uD788 \uC26C\uC9C0\uB294 \uBABB\uD558\uC2E4 \uAC81\uB2C8\uB2E4\uC544...\""
+  - portrait: {fileID: 665538603, guid: af9e5c4b2b97ff54c81361d029e7211e, type: 3}
+    characterName: "\uB2F9\uC2E0"
+    dialogue: "\"\uADF8\uAC8C \uBB34\uC2A8 \uB73B\uC774\uC9C0?\""
+  - portrait: {fileID: -1949824567, guid: 44f34ec5fdf5e2d4db503b1552ebac33, type: 3}
+    characterName: "\uBBF8\uC2A4\uD2F0"
+    dialogue: "\"\uB124\uAC00 \uB3CC\uC544\uAC00 \uD3B8\uD788 \uC274 \uC9D1 \uB530\uC704\uB294...\""
+  - portrait: {fileID: -1949824567, guid: 44f34ec5fdf5e2d4db503b1552ebac33, type: 3}
+    characterName: "\uBBF8\uC2A4\uD2F0"
+    dialogue: "\"\uC6B0\uB9AC\uAC00 \uC774\uBBF8 \uC5C6\uC560\uBC84\uB838\uC73C\uB2C8\uAE4C.\""
+  - portrait: {fileID: 665538603, guid: af9e5c4b2b97ff54c81361d029e7211e, type: 3}
+    characterName: "\uB2F9\uC2E0"
+    dialogue: "\"...\uC9D1\uC740 \uB2E4\uC2DC \uC9C0\uC73C\uBA74 \uB41C\uB2E4.\""
+  - portrait: {fileID: -1949824567, guid: 44f34ec5fdf5e2d4db503b1552ebac33, type: 3}
+    characterName: "\uBBF8\uC2A4\uD2F0"
+    dialogue: "\"\uACFC\uC5F0, \uC0C8\uB85C \uB9CC\uB4E0 \uC9D1\uC5D0\uC11C\uB3C4
+      \uD3B8\uD788 \uC274 \uC218 \uC788\uC744\uAE4C...?\""
+  - portrait: {fileID: -1949824567, guid: 44f34ec5fdf5e2d4db503b1552ebac33, type: 3}
+    characterName: "\uBBF8\uC2A4\uD2F0"
+    dialogue: "\"\uB124 \uC9D1\uC744 \uBD80\uC248\uB2E4\uB294 \uAC74, \uADF8\uB9CC\uD07C
+      \uB108\uC5D0 \uB300\uD55C \uC815\uBCF4\uAC00 \uC544\uC8FC\uC544\uC8FC \uB9CE\uB2E4\uB294
+      \uAC70\uC9C0...\""
+  - portrait: {fileID: -1949824567, guid: 44f34ec5fdf5e2d4db503b1552ebac33, type: 3}
+    characterName: "\uBBF8\uC2A4\uD2F0"
+    dialogue: "\"\uC9D1\uC744 \uB2E4\uC2DC \uC9D3\uB294\uB2E4\uBA74, \uADF8\uB54C\uB294
+      \uB124 \uAC00\uC871\uC744 \uBD80\uC218\uACE0...\""
+  - portrait: {fileID: -1949824567, guid: 44f34ec5fdf5e2d4db503b1552ebac33, type: 3}
+    characterName: "\uBBF8\uC2A4\uD2F0"
+    dialogue: "\"\uAC00\uC871\uC744 \uC9C0\uD0A4\uB7EC \uD55C\uB2E4\uBA74 \uB2E4\uC2DC
+      \uC9D1\uC744 \uBD80\uC234\uBC84\uB9AC\uACA0\uB2E4...\""
+  - portrait: {fileID: -1949824567, guid: 44f34ec5fdf5e2d4db503b1552ebac33, type: 3}
+    characterName: "\uBBF8\uC2A4\uD2F0"
+    dialogue: "(\uD480\uC369)"
+  - portrait: {fileID: 665538603, guid: af9e5c4b2b97ff54c81361d029e7211e, type: 3}
+    characterName: "\uB2F9\uC2E0"
+    dialogue: '"......"'
+  - portrait: {fileID: 665538603, guid: af9e5c4b2b97ff54c81361d029e7211e, type: 3}
+    characterName: "\uB2F9\uC2E0"
+    dialogue: "\"\uBCF4\uC544\uD558\uB2C8, \uB0B4\uAC00 \uD3B8\uD788 \uC26C\uB824\uBA74
+      \uC774 \"\uBE44\uBC84\uBC88\" \uB140\uC11D\uB4E4\uC744 \uC804\uBD80 \uD574\uCE58\uC6B0\uB294
+      \uC218\uBC16\uC5D0\uB294 \uC5C6\uB294 \uAC83 \uAC19\uAD70...\""
+  - portrait: {fileID: 665538603, guid: af9e5c4b2b97ff54c81361d029e7211e, type: 3}
+    characterName: "\uB2F9\uC2E0"
+    dialogue: "\"\uB0B4 \uC740\uD1F4\uB97C \uBC29\uD574\uD558\uB294 \uB188\uB4E4\uC740...\""
+  - portrait: {fileID: 665538603, guid: af9e5c4b2b97ff54c81361d029e7211e, type: 3}
+    characterName: "\uB2F9\uC2E0"
+    dialogue: "\"...\uBFCC\uB9AC\uBD80\uD130 \uBF51\uC544\uBC84\uB9AC\uB294 \uC218\uBC16\uC5D0...!\""

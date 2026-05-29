@@ -520,6 +520,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2660017285929703054, guid: e70fed30858faf74cb7b463ba4285b4f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -1704.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2660017285929703054, guid: e70fed30858faf74cb7b463ba4285b4f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -862.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 2660017285929703054, guid: e70fed30858faf74cb7b463ba4285b4f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.041992188
+      objectReference: {fileID: 0}
+    - target: {fileID: 2660017285929703054, guid: e70fed30858faf74cb7b463ba4285b4f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.0064087
+      objectReference: {fileID: 0}
     - target: {fileID: 7157117979111027910, guid: e70fed30858faf74cb7b463ba4285b4f, type: 3}
       propertyPath: m_Name
       value: FadeManager

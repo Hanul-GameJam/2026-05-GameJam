@@ -27,10 +27,31 @@ EditorBuildSettings:
     path: Assets/Scenes/Level_1-Boss_DefeatScene.unity
     guid: caf17cf8d19be5040966025bbe3dfab1
   - enabled: 1
-    path: Assets/Scenes/IntroScene_2.unity
+    path: Assets/Scenes/IntroScene_2-1.unity
     guid: 98f11b292a7e6bb46b69ebb24ce8e87f
+  - enabled: 1
+    path: Assets/Scenes/IntroScene_2-2.unity
+    guid: 8a98fd87edb06ff41b5db9caff90c98d
   - enabled: 1
     path: Assets/Scenes/Level_2-1.unity
     guid: 42590f8b92f4a6e43b3868ec1555f212
+  - enabled: 1
+    path: Assets/Scenes/Level_2-2.unity
+    guid: 4094fc653ab73d64993ea9c98c21733c
+  - enabled: 1
+    path: Assets/Scenes/Level_2-Boss_IntroScene.unity
+    guid: dc0f9aa2c91d7aa43852d7090e604297
+  - enabled: 1
+    path: Assets/Scenes/Level_2-Boss.unity
+    guid: 0cdccf0d96d498e4fa71b9978a9e6ed3
+  - enabled: 1
+    path: Assets/Scenes/Level_2-Boss_DefeatScene.unity
+    guid: d83cfe23decd17c4faa264a88749f418
+  - enabled: 1
+    path: Assets/Scenes/GameOverScene.unity
+    guid: 0a3c9a75fdc5d8343977f6b625a9933b
+  - enabled: 1
+    path: Assets/Scenes/ClearScene.unity
+    guid: ce62b59e8f7966c4380fe205483e17fa
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

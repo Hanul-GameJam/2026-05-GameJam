@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7d3e8b49b61393344a956d20cc065de6, type: 3}
-  m_Name: IntroCutScene_2
+  m_Name: IntroScene_2-1
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
   - portrait: {fileID: -1949824567, guid: 44f34ec5fdf5e2d4db503b1552ebac33, type: 3}
@@ -117,23 +117,3 @@ MonoBehaviour:
   - portrait: {fileID: 665538603, guid: af9e5c4b2b97ff54c81361d029e7211e, type: 3}
     characterName: "\uB2F9\uC2E0"
     dialogue: '"......"'
-  - portrait: {fileID: 665538603, guid: af9e5c4b2b97ff54c81361d029e7211e, type: 3}
-    characterName: "\uB2F9\uC2E0"
-    dialogue: "\"\uCC98\uC74C\uBD80\uD130 \uB05D\uAE4C\uC9C0 \uAE30\uBD84 \uB098\uC05C
-      \uB140\uC11D\uC774\uC5C8\uC5B4.\""
-  - portrait: {fileID: 665538603, guid: af9e5c4b2b97ff54c81361d029e7211e, type: 3}
-    characterName: "\uB2F9\uC2E0"
-    dialogue: "\"\uC774\uC81C \uC9D1\uC5D0 \uB3CC\uC544\uAC00\uC11C \uC26C\uC5B4\uC57C...\""
-  - portrait: {fileID: -4178046375966092550, guid: 52bd996089c80ca4890d4750c8b71a56, type: 3}
-    characterName: ???
-    dialogue: "\"\uC800\uAE30\uC788\uB2E4!\""
-  - portrait: {fileID: -4178046375966092550, guid: 52bd996089c80ca4890d4750c8b71a56, type: 3}
-    characterName: ???
-    dialogue: "\"\uB140\uC11D\uC5D0\uAC8C \uD63C\uCB50\uC744 \uB0B4 \uC8FC\uC790!\""
-  - portrait: {fileID: 665538603, guid: af9e5c4b2b97ff54c81361d029e7211e, type: 3}
-    characterName: "\uB2F9\uC2E0"
-    dialogue: "\"\uCCC7... \uC5B4\uCA54 \uC218 \uC5C6\uB098?\""
-  - portrait: {fileID: 665538603, guid: af9e5c4b2b97ff54c81361d029e7211e, type: 3}
-    characterName: "\uB2F9\uC2E0"
-    dialogue: "\"\uC2F8\uC6CC\uC11C \uBBF8\uC2A4\uD2F0 \uADF8 \uB140\uC11D\uC5D0\uAC8C
-      \uD55C \uBC29 \uBA39\uC5EC\uC8FC\uB294 \uC218\uBC16\uC5D0...!\""

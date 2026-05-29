@@ -7,7 +7,7 @@ public class EventSystemManager : MonoBehaviour
 
     void Awake()
     {
-        if (instance != null)
+        if (instance != null && instance != this)
         {
             // 💡 추가된 핵심 코드: 오브젝트가 파괴되기 전 찰나의 순간에 
             // EventSystem 컴포넌트 자체를 즉시(즉각적으로) 꺼버립니다.

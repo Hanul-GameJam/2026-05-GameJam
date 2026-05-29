@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d3e8b49b61393344a956d20cc065de6, type: 3}
+  m_Name: IntroScene_2-2
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  lines:
+  - portrait: {fileID: 665538603, guid: af9e5c4b2b97ff54c81361d029e7211e, type: 3}
+    characterName: "\uB2F9\uC2E0"
+    dialogue: '"......"'
+  - portrait: {fileID: 665538603, guid: af9e5c4b2b97ff54c81361d029e7211e, type: 3}
+    characterName: "\uB2F9\uC2E0"
+    dialogue: "\"\uB108\uD76C\uB4E4\uC758 \uC6B0\uB450\uBA38\uB9AC\uB294 \uB3CC\uC544\uAC14\uB294\uB370,
+      \uC5B4\uC9F8\uC11C \uB108\uD76C\uB294 \uB3CC\uC544\uAC00\uC9C0 \uC54A\uACE0
+      \uC788\uB294\uAC70\uC9C0?\""
+  - portrait: {fileID: -4178046375966092550, guid: 52bd996089c80ca4890d4750c8b71a56, type: 3}
+    characterName: "\uBE44\uBC84\uBC88 \uBD80\uD558 1"
+    dialogue: "\"\uBBF8\uC2A4\uD2F0 \uB300\uC7A5\uC740 \uC6B0\uB9AC\uC5D0\uAC8C \uBA85\uB839
+      \uD558\uB098\uB97C \uB0B4\uB9AC\uC168\uC9C0.\""
+  - portrait: {fileID: -4178046375966092550, guid: 52bd996089c80ca4890d4750c8b71a56, type: 3}
+    characterName: "\uBE44\uBC84\uBC88 \uBD80\uD558 2"
+    dialogue: "\"\uB10C \uBB34\uC870\uAC74 \uC81C\uC548\uC744 \uAC70\uC808\uD560
+      \uAC70\uACE0,\""
+  - portrait: {fileID: -4178046375966092550, guid: 52bd996089c80ca4890d4750c8b71a56, type: 3}
+    characterName: "\uBE44\uBC84\uBC88 \uBD80\uD558 1"
+    dialogue: "\"\uADF8\uB54C \uC6B0\uB9AC\uB294 \uAC70\uC808\uC758 \uB300\uAC00\uB97C
+      \uCE58\uB8E8\uAC8C \uD558\uB294 \uAC70\uC9C0.\""
+  - portrait: {fileID: 665538603, guid: af9e5c4b2b97ff54c81361d029e7211e, type: 3}
+    characterName: "\uB2F9\uC2E0"
+    dialogue: "\"\uCCC7... \uC5B4\uCA54 \uC218 \uC5C6\uB098?\""
+  - portrait: {fileID: 665538603, guid: af9e5c4b2b97ff54c81361d029e7211e, type: 3}
+    characterName: "\uB2F9\uC2E0"
+    dialogue: "\"\uC2F8\uC6CC\uC11C \uBBF8\uC2A4\uD2F0 \uADF8 \uB140\uC11D\uC5D0\uAC8C
+      \uD55C \uBC29 \uBA39\uC5EC\uC8FC\uB294 \uC218\uBC16\uC5D0...!\""
