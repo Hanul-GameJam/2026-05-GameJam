@@ -37,6 +37,8 @@ public class FadeManager : MonoBehaviour
             1f
         };
 
+        fadePanel.raycastTarget = true;
+
         foreach (float alpha in alphaSteps)
         {
             fadePanel.color =
@@ -63,6 +65,8 @@ public class FadeManager : MonoBehaviour
 
             yield return new WaitForSeconds(0.2f);
         }
+
+        fadePanel.raycastTarget = false;
     }
 
     public void LoadSceneWithFade(string sceneName)
